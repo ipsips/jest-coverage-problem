@@ -1,0 +1,48 @@
+{
+  "name": "jes-coverage-problem",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jest": "27.0.1",
+    "jest": "27.0.6",
+    "jest-circus": "27.0.6",
+    "ts-jest": "27.0.4",
+    "typescript": "4.3.5"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testEnvironment": "jsdom",
+    "reporters": [
+      "default"
+    ],
+    "coverageProvider": "v8",
+    "coverageThreshold": {
+      "global": {
+        "statements": 90,
+        "branches": 90,
+        "lines": 90
+      },
+      "src/**/*.?(ts|tsx)": {
+        "statements": 90,
+        "branches": 90,
+        "lines": 90
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest",
+      "\\.js$": "babel-jest"
+    },
+    "testURL": "http://localhost",
+    "testRegex": "(\\.(test|spec))\\.(ts|tsx)$"
+  }
+}
