@@ -1,6 +1,6 @@
-import { get } from './get2';
+import { get } from './get4';
 
-describe('get2', () => {
+describe('get4', () => {
   it('should return "bar"', () => {
     expect(get()).toBe('bar');
   });
